@@ -192,7 +192,7 @@
 //     scanf("%d",&n);  
 //     for(int i=1;i<=n;i++){
 //         for(int j=1;j<=n;j++){
-//             if(j==(n/2)+1 && i!=(n/2)+1){
+//             if(j==(n/2)+1 || i==(n/2)+1){
 //                 printf("* ");
 //             }
 //             else{
@@ -200,10 +200,89 @@
 //                     printf("  ");
 //                 }
 //             }
-//             if(i==(n/2)+1){
-//                 printf("* ");
+//         }
+//         printf("\n");
+//     }
+// }
+
+
+
+// print the given pattern
+// ******
+// *    *
+// *    *
+// ******
+// Hollow rectangle
+
+// #include<stdio.h>
+// void main(){
+//     int l,b;
+//     printf("enter the length:- ");
+//     scanf("%d",&l);
+//     printf("enter the breadth:- ");
+//     scanf("%d",&b);
+//     for(int i=1;i<=b;i++){
+//         for(int j=1;j<=l;j++){
+//             if(i==1||i==b){
+//                 printf("*");
+//             }
+//             else if(j==1||j==l){
+//                 printf("*");
+//             }
+//             else{
+//                 printf(" ");
 //             }
 //         }
 //         printf("\n");
 //     }
 // }
+
+
+
+// star cross
+
+// #include<stdio.h>
+// void main(){
+//     int n;
+//     printf("enter the length of the line of cross:- ");
+//     scanf("%d",&n);
+//     for(int i=1;i<=n;i++){
+//         for(int j=1;j<=n;j++){
+//             if(i==j || i+j==n+1){
+//                 printf("* ");
+//             }
+//             else{
+//                 printf("  ");
+//             }
+//         }
+//         printf("\n");
+//     }
+// }
+
+
+
+// print the floyd's triangle
+// 1
+// 2 3
+// 4 5 6
+// 7 8 9 10
+
+// #include<stdio.h>
+// void main(){
+//     int n;
+//     printf("enter the number of rows:- ");
+//     scanf("%d",&n);
+//     int a=1;
+//     for(int i=1;i<=n;i++){
+//         for(int j=1;j<=i;j++){
+//             printf("%d ",a);
+//             a++;
+//         }
+//         printf("\n");
+//     }
+// }
+
+
+
+// 0 & 1 triangle
+
